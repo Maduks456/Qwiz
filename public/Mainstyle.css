@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #121212;
+}
+
+select{
+    width: 50%;
+    padding: 5px;
+    border-radius: 6px;
+    border: 0.2px solid #333;
+    background-color: #2a2a2a;
+    color: white;
+    outline: none;
+}
+
+.options{
+    width: 400px;
+}
+
+.Title{
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    
+}
+
+.main {
+    font-family: Arial, sans-serif;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+} 
+
+.button_box {
+    font-family: Arial, sans-serif;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+} 
+
+h1, h3 {
+    place-self: center;
+}
+.title_box{
+    border-radius: 15px;
+    justify-content: center;
+    display: flex;
+    width: 300px;
+    height: 75px;
+    background-color: #211e1e;
+    margin-bottom: 10px;
+}
+.history_box{
+    padding: 15px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    justify-content: start;
+    display: flex;
+    width: 250px;
+    height: 45px;
+    background-color: #211e1e;
+}
+
+input:focus, select:focus {
+    border-color: #888;
+    
+}
+
+button {
+    width: 80%;
+    font-size: 20px;
+    height: 40px;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.box {
+    border-radius: 15px;
+    width: 400px;
+    height: 300px;
+    background-color: #211e1e;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+.box_title{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+}
+.box_list{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+}
+.box_button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+}
+.buttons{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.button{
+    font-size:  30px;
+    height: 120px;
+    width: 240px;
+    border-radius: 20px;
+    margin-right: 10px;
+    align-self: center;
+}
+.small{
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 660px) {
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
+  
+  
