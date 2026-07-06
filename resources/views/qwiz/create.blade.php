@@ -12,6 +12,9 @@
                 <h1> Create themes</h1>
             </div>
             <div>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
                 <form method="POST" action="/themes">
                     <input class="theme" type="text" name="theme" placeholder="Theme">
                     <div id="questions-container">

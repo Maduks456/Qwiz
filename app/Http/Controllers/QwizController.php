@@ -15,7 +15,7 @@ class QwizController extends Controller
            "theme" => 'required|numeric'
         ]);
 
-        if (!$request->has('question')) {
+        if (!$request->has('currentQuestion')) {
             session(['score' => 0]);
         }
         
@@ -62,21 +62,18 @@ class QwizController extends Controller
     public function nextQuestion(Request $request){
         $request->validate([
             "theme_id" => "required|exists:themes,id",
-    
             "answer_id" => "required|exists:answers,id"
         ]);
         $currentQuestion = $request->input('currentQuestion', 1) + 1;
         $Answer = Answer::where('id', $request->answer_id)
             ->firstOrFail();
+            
         $correctAnswers = session('score', 0);
         if ($Answer->is_correct) {
             $correctAnswers++;
+            session(['score' => $correctAnswers]);
         }
-        session(['score' => $correctAnswers]);
-
         
-        
-
         $theme = Theme::where('id', $request->theme_id)->first(); 
         $questions = session('questions');
 
@@ -87,7 +84,7 @@ class QwizController extends Controller
             History::create([
                 'theme' => $theme->name,
                 'correct_answers' => session('score', 0),
-                'user_id' => auth()->id()
+                'user_id' => auth()->id(),
             ]);
 
             return redirect('/result?theme=' . $request->theme_id);

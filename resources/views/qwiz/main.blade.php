@@ -32,9 +32,7 @@
                                 <input 
                                     type="radio" 
                                     name="answer_id" 
-                                    value="{{ $answer->id }}"
-                                    required
-                                >
+                                    value="{{ $answer->id }}"required>
                                 {{ $answer->answer }}
                             </label>
                         </div>
