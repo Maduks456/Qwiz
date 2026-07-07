@@ -7,12 +7,13 @@
     "api/index.php": { "runtime": "vercel-php@0.9.0" },
     "api/phpversion.php": { "runtime": "vercel-php@0.9.0" }
   },
-  "routes": [
-    { "src": "/build/assets/(.*)", "dest": "/public/build/assets/$1" },
+ "routes": [
+    { "src": "/build/(.*)", "dest": "/public/build/$1" },
     { "src": "/favicon.ico", "dest": "/public/favicon.ico" },
     { "src": "/phpversion", "dest": "/api/phpversion.php" },
+    { "src": "/(.*\\.(css|js|png|jpg|jpeg|svg|ico|woff|woff2|ttf|json))", "dest": "/public/$1" },
     { "src": "/(.*)", "dest": "/api/index.php" }
-  ],
+],
   "env": {
     "APP_ENV": "production",
     "APP_DEBUG": "false",
