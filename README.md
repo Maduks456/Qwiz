@@ -5,16 +5,18 @@
 <p>
     Built with Laravel.
 </p>
-## header 2 Demo Site
+
+## Demo Site
 <p>
     you can see the example  page here -> https://qwiz-sage.vercel.app
 </p>
-## header 2 To Login As An Admin 
+
+## To Login As An Admin 
 <p>
     Registering  an account, change the role to <b>"Admin"</b>.
 </p>
 
-AI Usage
+## AI Usage
 <p>
     Whilst creating, AI was used for progress bar and the function for showing more questions when making quizes. Also help with placeing the project on vercel.
 </p>
