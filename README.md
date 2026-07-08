@@ -1,3 +1,5 @@
+# header 1
+## header 2
 #  Qwiz
 ## About
 <p>Its a quiz webpage where the user can do quizzes and admins also make them. All users can do them and get a score that will show in the user history (the quiz name and the score). Everything is saved in mysql database</p>
