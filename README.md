@@ -1,19 +1,19 @@
-# header 1 Qwiz
-##About
+#  Qwiz
+## About
 <p>Its a quiz webpage where the user can do quizzes and admins also make them. All users can do them and get a score that will show in the user history (the quiz name and the score). Everything is saved in mysql database</p>
 <p>
     Built with Laravel.
 </p>
-## header 2 Demo Site
+Demo Site
 <p>
     you can see the example  page here -> https://qwiz-sage.vercel.app
 </p>
-## header 2 To Login As An Admin 
+To Login As An Admin 
 <p>
     Registering  an account, change the role to <b>"Admin"</b>.
 </p>
 
-## header 2 AI Usage
+AI Usage
 <p>
     Whilst creating, AI was used for progress bar and the function for showing more questions when making quizes. Also help with placeing the project on vercel.
 </p>
