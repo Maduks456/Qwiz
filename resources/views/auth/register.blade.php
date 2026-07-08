@@ -38,7 +38,7 @@
                         <label for="password">Password</label>
                     </div>
                     <div class="box_smallbox_input">
-                        <input type="text" name="password" required>
+                        <input type="password" name="password" required>
                     </div>
                 </div>
             <button>Sign up</button>
